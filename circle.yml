@@ -1,0 +1,7 @@
+machine:
+  python:
+    version: 3.4
+
+test:
+  override: python -m tests
+  post: something else
