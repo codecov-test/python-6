@@ -4,4 +4,9 @@ machine:
 
 test:
   override: python -m tests
-  post: something else
+  post:
+    - something else
+    - codecov
+dependencies:
+  override:
+    - pip install codecov
